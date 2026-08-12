@@ -61,7 +61,8 @@ function LandingPage() {
               and Dreamer&apos;s Crossroads UI.
             </p>
             <Link className="landing-track__link" to="/work/product-ux">
-              View case studies →
+              View case studies
+              <span aria-hidden="true">&rarr;</span>
             </Link>
           </article>
 
@@ -72,7 +73,8 @@ function LandingPage() {
               GameGrid, Dreamer&apos;s Crossroads, and Heaven&apos;s Ascent.
             </p>
             <Link className="landing-track__link" to="/work/game-design">
-              View work →
+              View work
+              <span aria-hidden="true">&rarr;</span>
             </Link>
           </article>
         </section>
@@ -88,7 +90,14 @@ function LandingPage() {
           >
             GitHub
           </a>
-          <span>LinkedIn</span>
+          <span aria-hidden="true">·</span>
+          <a
+            href="https://www.linkedin.com/in/amina-moosa-567a643b3/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
         </nav>
       </footer>
     </div>

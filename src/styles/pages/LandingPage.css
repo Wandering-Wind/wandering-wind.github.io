@@ -29,6 +29,7 @@
 .landing-header nav a {
   color: var(--color-stone);
   text-decoration: none;
+  transition: color 180ms ease;
 }
 
 .landing-hero {
@@ -81,6 +82,7 @@
   align-items: flex-start;
   flex-direction: column;
   padding: 46px;
+  transition: background-color 180ms ease;
 }
 
 .landing-track:first-of-type {
@@ -114,11 +116,18 @@
 }
 
 .landing-track__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   margin-top: auto;
   padding-bottom: 3px;
   border-bottom: 1px solid currentColor;
   color: var(--color-ink);
   text-decoration: none;
+}
+
+.landing-track__link span {
+  transition: transform 180ms ease;
 }
 
 .landing-footer {
@@ -140,6 +149,28 @@
 .landing-footer a {
   color: var(--color-stone);
   text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.landing-page a:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid var(--color-pine);
+  outline-offset: 5px;
+}
+
+@media (hover: hover) {
+  .landing-header nav a:hover,
+  .landing-footer a:hover {
+    color: var(--color-pine);
+  }
+
+  .landing-track:hover {
+    background: #f6f2ec;
+  }
+
+  .landing-track__link:hover span {
+    transform: translateX(3px);
+  }
 }
 
 .visually-hidden {
@@ -253,5 +284,14 @@
 
   .landing-track h3 {
     font-size: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-header nav a,
+  .landing-track,
+  .landing-track__link span,
+  .landing-footer a {
+    transition-duration: 0.01ms;
   }
 }

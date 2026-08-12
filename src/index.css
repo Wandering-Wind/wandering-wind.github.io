@@ -30,6 +30,10 @@ body {
   min-height: 100vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #root {
   min-height: 100svh;
 }
@@ -57,4 +61,10 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--color-border);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
