@@ -76,7 +76,7 @@ function LandingPage() {
           >
             GitHub
           </a>
-          <span aria-hidden="true">·</span>
+          <span aria-hidden="true">&middot;</span>
           <a
             href="https://www.linkedin.com/in/amina-moosa-567a643b3/"
             target="_blank"

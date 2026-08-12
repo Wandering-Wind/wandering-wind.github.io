@@ -1,10 +1,28 @@
 import { Route, Routes } from 'react-router-dom'
+import ComingSoonPage from './pages/ComingSoonPage.jsx'
 import LandingPage from './pages/LandingPage.jsx'
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route
+        path="/about"
+        element={<ComingSoonPage title="About" />}
+      />
+      <Route
+        path="/contact"
+        element={<ComingSoonPage title="Contact" />}
+      />
+      <Route
+        path="/work/product-ux"
+        element={<ComingSoonPage title="Product & UX Design" />}
+      />
+      <Route
+        path="/work/game-design"
+        element={<ComingSoonPage title="Game Design & Development" />}
+      />
+      <Route path="*" element={<ComingSoonPage title="Page not found" />} />
     </Routes>
   )
 }
