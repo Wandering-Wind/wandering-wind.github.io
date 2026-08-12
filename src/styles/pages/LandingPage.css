@@ -42,16 +42,6 @@
   text-align: center;
 }
 
-.landing-hero__icon {
-  width: 38px;
-  margin-bottom: 32px;
-  fill: none;
-  stroke: var(--color-pine);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2.5;
-}
-
 .landing-hero h1 {
   max-width: 780px;
   margin: 0;
@@ -231,11 +221,6 @@
   .landing-hero {
     min-height: 420px;
     padding: 58px 24px;
-  }
-
-  .landing-hero__icon {
-    width: 34px;
-    margin-bottom: 28px;
   }
 
   .landing-hero h1 {

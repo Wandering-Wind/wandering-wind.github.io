@@ -1,19 +1,6 @@
 import { Link } from 'react-router-dom'
 import '../styles/pages/LandingPage.css'
 
-function EyeIcon() {
-  return (
-    <svg
-      className="landing-hero__icon"
-      viewBox="0 0 48 32"
-      aria-hidden="true"
-    >
-      <path d="M3 16C8.5 8.5 15.5 4.5 24 4.5S39.5 8.5 45 16c-5.5 7.5-12.5 11.5-21 11.5S8.5 23.5 3 16Z" />
-      <circle cx="24" cy="16" r="5" />
-    </svg>
-  )
-}
-
 function LandingPage() {
   return (
     <div className="landing-page">
@@ -34,7 +21,6 @@ function LandingPage() {
           className="landing-hero"
           aria-labelledby="introduction-heading"
         >
-          <EyeIcon />
           <h1 id="introduction-heading">
             I design interactions by guiding action, not instructing it.
           </h1>
