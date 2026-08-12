@@ -1,11 +1,11 @@
-import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import LandingPage from './pages/LandingPage.jsx'
 
 function App() {
-
   return (
-    <>
-      <h1>Wassa</h1>
-    </>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+    </Routes>
   )
 }
 
