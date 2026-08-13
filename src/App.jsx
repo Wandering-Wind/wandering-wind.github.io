@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import ComingSoonPage from './pages/ComingSoonPage.jsx'
 import LandingPage from './pages/LandingPage.jsx'
+import ProductUXPage from './pages/ProductUXPage.jsx'
 
 function App() {
   return (
@@ -14,10 +15,7 @@ function App() {
         path="/contact"
         element={<ComingSoonPage title="Contact" />}
       />
-      <Route
-        path="/work/product-ux"
-        element={<ComingSoonPage title="Product & UX Design" />}
-      />
+      <Route path="/work/product-ux" element={<ProductUXPage />} />
       <Route
         path="/work/game-design"
         element={<ComingSoonPage title="Game Design & Development" />}
