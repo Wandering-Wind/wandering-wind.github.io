@@ -22,6 +22,10 @@ function App() {
         element={<AbsaNextGenPage />}
       />
       <Route
+        path="/work/product-ux/subscription-tracker"
+        element={<ComingSoonPage title="Subscription Tracker" />}
+      />
+      <Route
         path="/work/game-design"
         element={<ComingSoonPage title="Game Design & Development" />}
       />

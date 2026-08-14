@@ -622,6 +622,36 @@ function AbsaNextGenPage() {
             </details>
           </div>
         </section>
+
+        <nav className="case-study-closing" aria-label="Case study navigation">
+          <div className="case-study-closing__links">
+            <p className="case-study-section__eyebrow">Explore the product</p>
+            <a
+              href="https://wandering-wind.github.io/AbsaNextGen/#/home"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live product <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              href="https://github.com/Wandering-Wind/AbsaNextGen"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+            <Link to="/work/product-ux">All Product &amp; UX work</Link>
+          </div>
+
+          <Link
+            className="case-study-closing__next"
+            to="/work/product-ux/subscription-tracker"
+          >
+            <span>Next case study</span>
+            <strong>Subscription Tracker</strong>
+            <span aria-hidden="true">→</span>
+          </Link>
+        </nav>
       </main>
 
       <SiteFooter />
