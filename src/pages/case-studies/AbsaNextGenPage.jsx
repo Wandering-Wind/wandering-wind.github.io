@@ -7,6 +7,7 @@ import moneySnapshotPurple from '../../assets/case-studies/absa/money-snapshot-p
 import moneySnapshotWireframe from '../../assets/case-studies/absa/money-snapshot-wireframe.svg'
 import onboardingCurrent from '../../assets/case-studies/absa/onboarding-current.png'
 import rentVsBuyCurrent from '../../assets/case-studies/absa/rent-vs-buy-current.png'
+import rentVsBuyCalculation from '../../assets/case-studies/absa/rent-vs-buy-calculation.png'
 import rentVsBuyPurple from '../../assets/case-studies/absa/rent-vs-buy-purple.png'
 import rentVsBuyWireframe from '../../assets/case-studies/absa/rent-vs-buy-wireframe.svg'
 import strategyTrackCurrent from '../../assets/case-studies/absa/strategy-track-current.png'
@@ -382,6 +383,44 @@ function AbsaNextGenPage() {
               <figcaption>
                 The Strategy Track keeps adjustable assumptions, staged goals,
                 and prerequisite warnings within one decision context.
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section className="case-study-section" aria-labelledby="technical-title">
+          <p className="case-study-section__eyebrow">Technical highlight</p>
+          <div className="case-study-section__content">
+            <h2 id="technical-title">
+              The comparison is calculated month by month, then translated into
+              a yearly decision view.
+            </h2>
+            <p>
+              The simulator reduces the remaining bond balance through monthly
+              interest and principal calculations. In parallel, it applies
+              property growth, compounds the renter&apos;s investment portfolio,
+              increases rent annually, and stores yearly snapshots for the
+              chart and verdict.
+            </p>
+            <p>
+              These outputs are illustrative projections based on adjustable
+              assumptions. They explain the model&apos;s logic rather than predict
+              an individual financial outcome.
+            </p>
+
+            <figure className="case-study-code-visual">
+              <div className="case-study-code-visual__crop">
+                <img
+                  src={rentVsBuyCalculation}
+                  width="1602"
+                  height="868"
+                  loading="lazy"
+                  alt="JavaScript calculation loop reducing a bond balance, applying annual property growth, compounding a renter investment portfolio, increasing rent, and recording yearly snapshots."
+                />
+              </div>
+              <figcaption>
+                The cropped excerpt shows the central comparison loop. The
+                original screenshot remains intact in the project assets.
               </figcaption>
             </figure>
           </div>

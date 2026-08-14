@@ -308,6 +308,31 @@
   line-height: 1.5;
 }
 
+.case-study-code-visual {
+  margin: 42px 0 0;
+}
+
+.case-study-code-visual__crop {
+  aspect-ratio: 1602 / 700;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: #0d1117;
+}
+
+.case-study-code-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateY(-19%);
+}
+
+.case-study-code-visual figcaption {
+  max-width: 720px;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
 @media (hover: hover) {
   .case-study-hero a:hover {
     color: var(--color-pine);
