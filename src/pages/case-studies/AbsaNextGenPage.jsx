@@ -99,6 +99,49 @@ function AbsaNextGenPage() {
             </p>
           </div>
         </section>
+
+        <section className="case-study-section" aria-labelledby="problem-title">
+          <p className="case-study-section__eyebrow">Problem and goals</p>
+          <div className="case-study-section__content">
+            <h2 id="problem-title">
+              Make complex financial choices easier to examine before someone
+              commits to them.
+            </h2>
+            <p>
+              The assignment brief focused on young South African professionals
+              balancing decisions about property, investing, tax, debt, and
+              savings without a simple way to compare their consequences. It
+              framed limited personalisation and financial overwhelm as a
+              business problem for ABSA. That business framing came from the
+              brief and is not presented here as independently verified ABSA
+              data.
+            </p>
+
+            <ol className="case-study-goals">
+              <li>
+                <h3>Reduce decision fatigue</h3>
+                <p>
+                  Let people adjust assumptions and compare difficult choices
+                  without building their own spreadsheet.
+                </p>
+              </li>
+              <li>
+                <h3>Teach through the interaction</h3>
+                <p>
+                  Explain South African financial concepts at the moment they
+                  affect a calculation or recommendation.
+                </p>
+              </li>
+              <li>
+                <h3>Connect insight to a next step</h3>
+                <p>
+                  Turn a one-time result into a clearer path through
+                  personalised milestones and guidance.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </section>
       </main>
 
       <SiteFooter />
