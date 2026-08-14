@@ -3,6 +3,7 @@ import ComingSoonPage from './pages/ComingSoonPage.jsx'
 import LandingPage from './pages/LandingPage.jsx'
 import ProductUXPage from './pages/ProductUXPage.jsx'
 import AbsaNextGenPage from './pages/case-studies/AbsaNextGenPage.jsx'
+import SubscriptionTrackerPage from './pages/case-studies/SubscriptionTrackerPage.jsx'
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
       />
       <Route
         path="/work/product-ux/subscription-tracker"
-        element={<ComingSoonPage title="Subscription Tracker" />}
+        element={<SubscriptionTrackerPage />}
       />
       <Route
         path="/work/game-design"
