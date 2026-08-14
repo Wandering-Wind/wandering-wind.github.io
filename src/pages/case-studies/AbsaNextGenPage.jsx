@@ -7,6 +7,8 @@ import moneySnapshotPurple from '../../assets/case-studies/absa/money-snapshot-p
 import moneySnapshotWireframe from '../../assets/case-studies/absa/money-snapshot-wireframe.svg'
 import onboardingCurrent from '../../assets/case-studies/absa/onboarding-current.png'
 import rentVsBuyCurrent from '../../assets/case-studies/absa/rent-vs-buy-current.png'
+import rentVsBuyPurple from '../../assets/case-studies/absa/rent-vs-buy-purple.png'
+import rentVsBuyWireframe from '../../assets/case-studies/absa/rent-vs-buy-wireframe.svg'
 import '../../styles/pages/case-studies/CaseStudyPage.css'
 
 function AbsaNextGenPage() {
@@ -37,6 +39,36 @@ function AbsaNextGenPage() {
       alt: 'Current Money Snapshot interface using a light content area, dark navigation, red accents, and clearly separated financial panels.',
       caption:
         'The current build separates navigation, inputs, results, and South African context with stronger contrast and clearer grouping.',
+    },
+  ]
+
+  const rentVsBuySequence = [
+    {
+      label: '01, Wireframe',
+      src: rentVsBuyWireframe,
+      width: 931,
+      height: 600,
+      alt: 'Simulation Lab wireframe with adjustable scenario controls and areas for comparing financial outcomes.',
+      caption:
+        'The wireframe established a simulation workspace where inputs and comparative results could update together.',
+    },
+    {
+      label: '02, Intermediate build',
+      src: rentVsBuyPurple,
+      width: 1917,
+      height: 926,
+      alt: 'Intermediate purple Rent vs Buy simulator with buying inputs, a net-worth chart, contextual guidance, and a buying verdict.',
+      caption:
+        'The purple build made the comparison functional, but the verdict competed with the chart and supporting information inside a dense surface.',
+    },
+    {
+      label: '03, Current build',
+      src: rentVsBuyCurrent,
+      width: 1917,
+      height: 927,
+      alt: 'Current Rent vs Buy Studio with scenario controls, a prominent seven-year verdict, summary metrics, and a net-worth chart.',
+      caption:
+        'The current build leads with the verdict, follows with the figures behind it, and keeps the assumptions available for adjustment.',
     },
   ]
 
@@ -279,6 +311,24 @@ function AbsaNextGenPage() {
             </p>
 
             <VisualSequence items={moneySnapshotSequence} />
+          </div>
+        </section>
+
+        <section className="case-study-section" aria-labelledby="simulation-title">
+          <p className="case-study-section__eyebrow">Decision simulator</p>
+          <div className="case-study-section__content">
+            <h2 id="simulation-title">
+              Rent vs Buy evolved from a calculation workspace into a clearer
+              decision narrative.
+            </h2>
+            <p>
+              The simulator still exposes its assumptions and comparison data,
+              but the current hierarchy answers the primary question first. A
+              verdict, supporting figures, and longer-term chart now form a
+              deliberate reading order.
+            </p>
+
+            <VisualSequence items={rentVsBuySequence} />
           </div>
         </section>
       </main>
