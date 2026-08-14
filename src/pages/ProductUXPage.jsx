@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
 import SiteFooter from '../components/layout/SiteFooter.jsx'
 import SiteHeader from '../components/layout/SiteHeader.jsx'
+import ProjectPreview from '../components/work/ProjectPreview.jsx'
 import productUXProjects from '../data/productUXProjects.js'
 
 function ProductUXPage() {
@@ -22,14 +22,7 @@ function ProductUXPage() {
           <h2 id="case-studies-heading">Case studies</h2>
 
           {productUXProjects.map((project) => (
-            <article key={project.slug}>
-              <p>{project.status}</p>
-              <h3>{project.title}</h3>
-              <p>{project.summary}</p>
-              <Link to={`/work/product-ux/${project.slug}`}>
-                View case study
-              </Link>
-            </article>
+            <ProjectPreview key={project.slug} project={project} />
           ))}
         </section>
       </main>
