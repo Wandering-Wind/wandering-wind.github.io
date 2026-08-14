@@ -44,6 +44,45 @@ function SubscriptionTrackerPage() {
             usability testing or outcome data is presented.
           </p>
         </header>
+
+        <section
+          className="case-study-section"
+          aria-labelledby="subscription-overview-title"
+        >
+          <p className="case-study-section__eyebrow">Overview and hypothesis</p>
+          <div className="case-study-section__content">
+            <h2 id="subscription-overview-title">
+              What changes when recurring costs are presented as one commitment
+              instead of separate small charges?
+            </h2>
+            <p>
+              Subscription Tracker is a design concept for consolidating
+              recurring payments across streaming, software, memberships, and
+              other services. It would show the combined monthly and annual
+              cost, upcoming renewals, and a longer-term projection within one
+              focused experience.
+            </p>
+            <p>
+              The concept deliberately addresses one flow rather than proposing
+              a complete banking or budgeting application. Its purpose is to
+              explore how cost can be made visible at the moment someone reviews,
+              adds, or reconsiders a subscription.
+            </p>
+
+            <aside
+              className="case-study-limitation"
+              aria-labelledby="subscription-hypothesis-title"
+            >
+              <h3 id="subscription-hypothesis-title">Working hypothesis</h3>
+              <p>
+                If recurring payments are consolidated and translated into
+                annual and multi-year totals, people may be better able to
+                evaluate whether each service still deserves a place in their
+                budget. This hypothesis has not been tested with users.
+              </p>
+            </aside>
+          </div>
+        </section>
       </main>
 
       <SiteFooter />
