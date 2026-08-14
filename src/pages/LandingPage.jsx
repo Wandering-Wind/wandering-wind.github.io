@@ -35,8 +35,8 @@ function LandingPage() {
             <p className="landing-track__eyebrow">Featured track</p>
             <h3>Product &amp; UX Design</h3>
             <p className="landing-track__projects">
-              ABSA NextGen Wealth Studio, Subscription Tracker, Thawing Memory,
-              and Dreamer&apos;s Crossroads UI.
+              ABSA NextGen Wealth Studio, Subscription Tracker, and Thawing
+              Memory.
             </p>
             <Link className="landing-track__link" to="/work/product-ux">
               View case studies

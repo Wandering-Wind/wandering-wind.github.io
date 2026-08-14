@@ -1,0 +1,146 @@
+.product-ux-page {
+  display: flex;
+  min-height: 100svh;
+  flex-direction: column;
+  background: var(--color-paper);
+}
+
+.product-ux-main {
+  width: min(100%, 1440px);
+  margin: 0 auto;
+}
+
+.product-ux-intro {
+  max-width: 900px;
+  padding: 46px 46px 40px;
+}
+
+.product-ux-intro__eyebrow,
+.project-preview__status {
+  color: var(--color-pine);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.product-ux-intro h1 {
+  margin: 12px 0 20px;
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+
+.product-ux-intro > p:last-child {
+  max-width: 680px;
+  font-size: 1.1rem;
+  line-height: 1.55;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--color-border);
+}
+
+.project-preview {
+  display: flex;
+  min-height: 270px;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 40px 46px 42px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-preview:first-of-type,
+.project-preview:nth-of-type(2) {
+  border-right: 1px solid var(--color-border);
+}
+
+.project-preview h3 {
+  margin: 10px 0 0;
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 2.6vw, 2.3rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+}
+
+.project-preview__summary {
+  max-width: 700px;
+  margin-top: 14px;
+  line-height: 1.55;
+}
+
+.project-preview__link {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  padding-bottom: 3px;
+  border-bottom: 1px solid currentColor;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.project-preview__link span {
+  transition: transform 180ms ease;
+}
+
+.project-preview__link:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid var(--color-pine);
+  outline-offset: 5px;
+}
+
+@media (hover: hover) {
+  .project-preview__link:hover span {
+    transform: translateX(3px);
+  }
+}
+
+@media (max-width: 900px) {
+  .product-ux-intro {
+    padding: 46px 32px 40px;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .project-preview {
+    padding: 38px 32px 42px;
+  }
+
+  .project-preview:first-of-type,
+  .project-preview:nth-of-type(2) {
+    border-right: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .product-ux-intro {
+    padding: 44px 24px 40px;
+  }
+
+  .product-ux-intro h1 {
+    margin-top: 10px;
+  }
+
+  .project-preview {
+    min-height: 250px;
+    padding: 38px 24px 42px;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-preview__link span {
+    transition-duration: 0.01ms;
+  }
+}

@@ -20,13 +20,6 @@ const productUXProjects = [
     summary:
       'A research prototype exploring how digital tools might support the reconstruction of cultural memory through food, gardening, and ritual.',
   },
-  {
-    slug: 'dreamers-crossroads-ui',
-    status: 'Interaction design',
-    title: "Dreamer's Crossroads UI",
-    summary:
-      'A game interface redesign that replaced a neon visual direction with a paper-scroll system and used placement to guide action.',
-  },
 ]
 
 export default productUXProjects
