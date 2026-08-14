@@ -402,6 +402,101 @@
   margin-top: 0;
 }
 
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 24px;
+  margin-top: 42px;
+}
+
+.concept-grid article,
+.subscription-direction article {
+  padding-top: 18px;
+  border-top: 1px solid var(--color-border);
+}
+
+.concept-grid__number {
+  color: var(--color-pine);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.concept-grid h3,
+.subscription-direction h3 {
+  margin: 14px 0 10px;
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.concept-grid article > p:last-child,
+.subscription-direction article > p:last-child {
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.subscription-direction {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 42px;
+}
+
+.subscription-palette {
+  display: grid;
+  gap: 6px;
+  margin: 14px 0 18px;
+}
+
+.subscription-palette span {
+  display: block;
+  padding: 10px 12px;
+  font-size: 0.75rem;
+}
+
+.subscription-palette__amber {
+  color: #2e241b;
+  background: #d98e3f;
+}
+
+.subscription-palette__cream {
+  color: #2e2e2e;
+  background: #f6eddf;
+}
+
+.subscription-palette__charcoal {
+  color: #fff;
+  background: #2e2e2e;
+}
+
+.validation-questions {
+  display: grid;
+  gap: 0;
+  margin: 42px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: validation-question;
+}
+
+.validation-questions li {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 12px;
+  padding: 18px 0;
+  border-top: 1px solid var(--color-border);
+  line-height: 1.55;
+  counter-increment: validation-question;
+}
+
+.validation-questions li::before {
+  content: counter(validation-question, decimal-leading-zero);
+  color: var(--color-pine);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
 .case-study-details {
   margin-top: 38px;
   border-top: 1px solid var(--color-border);
@@ -610,6 +705,11 @@
     grid-template-columns: 1fr;
     gap: 28px;
   }
+
+  .subscription-direction {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -663,6 +763,10 @@
 
   .process-artifacts__sitemap {
     grid-column: auto;
+  }
+
+  .concept-grid {
+    grid-template-columns: 1fr;
   }
 
   .case-study-closing {
