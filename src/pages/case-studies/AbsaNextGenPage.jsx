@@ -74,6 +74,31 @@ function AbsaNextGenPage() {
             direct comparison and plain-language verdict.
           </figcaption>
         </figure>
+
+        <section className="case-study-section" aria-labelledby="overview-title">
+          <p className="case-study-section__eyebrow">Overview</p>
+          <div className="case-study-section__content">
+            <h2 id="overview-title">
+              One product, three connected ways to understand a financial
+              decision.
+            </h2>
+            <p>
+              NextGen Wealth Studio is a financial-planning web application
+              built around Money Snapshot, a live financial-health dashboard,
+              Strategy Tracks, personalised five-year roadmaps, and Money
+              Studio, a set of interactive decision simulators. The financial
+              examples use South African parameters sourced for the 2026
+              assignment period rather than a live financial-data feed.
+            </p>
+            <p>
+              The product moved through three distinct visual and structural
+              stages, from an ambitious glassmorphism and neumorphism canvas,
+              through a purple intermediate build, to the clearer,
+              ABSA-aligned structure that shipped. That evolution, including
+              what changed and why, is the central story of this case study.
+            </p>
+          </div>
+        </section>
       </main>
 
       <SiteFooter />
