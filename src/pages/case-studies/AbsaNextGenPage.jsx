@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import SiteFooter from '../../components/layout/SiteFooter.jsx'
 import SiteHeader from '../../components/layout/SiteHeader.jsx'
+import rentVsBuyCurrent from '../../assets/case-studies/absa/rent-vs-buy-current.png'
 import '../../styles/pages/case-studies/CaseStudyPage.css'
 
 function AbsaNextGenPage() {
@@ -60,6 +61,19 @@ function AbsaNextGenPage() {
             produced in partnership with ABSA.
           </p>
         </header>
+
+        <figure className="case-study-hero-visual">
+          <img
+            src={rentVsBuyCurrent}
+            width="1917"
+            height="927"
+            alt="Current ABSA NextGen Rent vs Buy Studio showing adjustable financial inputs, a seven-year buying verdict, and a net-worth comparison chart."
+          />
+          <figcaption>
+            The shipped Rent vs Buy Studio turns adjustable assumptions into a
+            direct comparison and plain-language verdict.
+          </figcaption>
+        </figure>
       </main>
 
       <SiteFooter />
