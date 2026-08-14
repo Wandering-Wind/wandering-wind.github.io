@@ -1,9 +1,8 @@
 function VisualSequence({ items }) {
   return (
     <div className="visual-sequence">
-      {items.map((item) => (
-        <figure className="visual-sequence__item" key={item.label}>
-          <p className="visual-sequence__label">{item.label}</p>
+      {items.map((item) => {
+        const image = (
           <img
             src={item.src}
             width={item.width}
@@ -11,9 +10,20 @@ function VisualSequence({ items }) {
             loading="lazy"
             alt={item.alt}
           />
-          <figcaption>{item.caption}</figcaption>
-        </figure>
-      ))}
+        )
+
+        return (
+          <figure className="visual-sequence__item" key={item.label}>
+            <p className="visual-sequence__label">{item.label}</p>
+            {item.crop === 'browser' ? (
+              <div className="visual-sequence__browser-crop">{image}</div>
+            ) : (
+              image
+            )}
+            <figcaption>{item.caption}</figcaption>
+          </figure>
+        )
+      })}
     </div>
   )
 }

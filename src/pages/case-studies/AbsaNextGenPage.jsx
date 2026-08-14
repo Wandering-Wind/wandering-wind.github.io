@@ -5,6 +5,9 @@ import SiteHeader from '../../components/layout/SiteHeader.jsx'
 import moneySnapshotCurrent from '../../assets/case-studies/absa/money-snapshot-current.png'
 import moneySnapshotPurple from '../../assets/case-studies/absa/money-snapshot-purple.png'
 import moneySnapshotWireframe from '../../assets/case-studies/absa/money-snapshot-wireframe.svg'
+import loginCurrent from '../../assets/case-studies/absa/login-current.png'
+import loginPurple from '../../assets/case-studies/absa/login-purple.png'
+import loginWireframe from '../../assets/case-studies/absa/login-wireframe.svg'
 import onboardingCurrent from '../../assets/case-studies/absa/onboarding-current.png'
 import rentVsBuyCurrent from '../../assets/case-studies/absa/rent-vs-buy-current.png'
 import rentVsBuyCalculation from '../../assets/case-studies/absa/rent-vs-buy-calculation.png'
@@ -71,6 +74,37 @@ function AbsaNextGenPage() {
       alt: 'Current Rent vs Buy Studio with scenario controls, a prominent seven-year verdict, summary metrics, and a net-worth chart.',
       caption:
         'The current build leads with the verdict, follows with the figures behind it, and keeps the assumptions available for adjustment.',
+    },
+  ]
+
+  const loginSequence = [
+    {
+      label: '01, Wireframe',
+      src: loginWireframe,
+      width: 931,
+      height: 550,
+      alt: 'Login wireframe with a centred sign-in panel and minimal supporting content.',
+      caption:
+        'The wireframe treated sign-in as a contained utility screen with little product context.',
+    },
+    {
+      label: '02, Intermediate build',
+      src: loginPurple,
+      width: 1917,
+      height: 930,
+      alt: 'Intermediate purple login screen with a centred card, username and password fields, and a glowing button.',
+      caption:
+        'The intermediate build followed the original soft, glowing visual direction but still isolated the form from the product story.',
+    },
+    {
+      label: '03, Current build',
+      src: loginCurrent,
+      width: 1916,
+      height: 1027,
+      crop: 'browser',
+      alt: 'Current ABSA NextGen login screen pairing the sign-in form with a concise product introduction and feature summary.',
+      caption:
+        'The current screen adds product context, stronger hierarchy, and a clear route for someone creating a profile for the first time.',
     },
   ]
 
@@ -484,6 +518,28 @@ function AbsaNextGenPage() {
                 chart and reading accessibility would be the next priority.
               </p>
             </aside>
+          </div>
+        </section>
+
+        <section className="case-study-section" aria-labelledby="appendix-title">
+          <p className="case-study-section__eyebrow">Optional process</p>
+          <div className="case-study-section__content">
+            <h2 id="appendix-title">
+              Supporting screens show the same shift in structure and tone.
+            </h2>
+            <p>
+              The login sequence is secondary to the main product story, so it
+              remains available without interrupting the primary case-study
+              path.
+            </p>
+
+            <details className="case-study-details">
+              <summary>
+                View the login evolution
+                <span aria-hidden="true">+</span>
+              </summary>
+              <VisualSequence items={loginSequence} />
+            </details>
           </div>
         </section>
       </main>
