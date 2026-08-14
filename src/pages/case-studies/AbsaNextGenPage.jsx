@@ -1,11 +1,45 @@
 import { Link } from 'react-router-dom'
+import VisualSequence from '../../components/case-studies/VisualSequence.jsx'
 import SiteFooter from '../../components/layout/SiteFooter.jsx'
 import SiteHeader from '../../components/layout/SiteHeader.jsx'
+import moneySnapshotCurrent from '../../assets/case-studies/absa/money-snapshot-current.png'
+import moneySnapshotPurple from '../../assets/case-studies/absa/money-snapshot-purple.png'
+import moneySnapshotWireframe from '../../assets/case-studies/absa/money-snapshot-wireframe.svg'
 import onboardingCurrent from '../../assets/case-studies/absa/onboarding-current.png'
 import rentVsBuyCurrent from '../../assets/case-studies/absa/rent-vs-buy-current.png'
 import '../../styles/pages/case-studies/CaseStudyPage.css'
 
 function AbsaNextGenPage() {
+  const moneySnapshotSequence = [
+    {
+      label: '01, Wireframe',
+      src: moneySnapshotWireframe,
+      width: 931,
+      height: 550,
+      alt: 'Money Snapshot wireframe arranging financial inputs beside summary and chart panels.',
+      caption:
+        'The wireframe established the relationship between editable inputs and an updating financial overview.',
+    },
+    {
+      label: '02, Intermediate build',
+      src: moneySnapshotPurple,
+      width: 1901,
+      height: 925,
+      alt: 'Intermediate purple Money Snapshot interface with a financial health score, income breakdown, and editable inputs.',
+      caption:
+        'The purple build implemented the dashboard, but its low-contrast surfaces made the information hierarchy less immediate.',
+    },
+    {
+      label: '03, Current build',
+      src: moneySnapshotCurrent,
+      width: 1917,
+      height: 927,
+      alt: 'Current Money Snapshot interface using a light content area, dark navigation, red accents, and clearly separated financial panels.',
+      caption:
+        'The current build separates navigation, inputs, results, and South African context with stronger contrast and clearer grouping.',
+    },
+  ]
+
   return (
     <div className="case-study-page">
       <SiteHeader workIsCurrent />
@@ -227,6 +261,24 @@ function AbsaNextGenPage() {
                 visible steps before users enter the main financial tools.
               </figcaption>
             </figure>
+          </div>
+        </section>
+
+        <section className="case-study-section" aria-labelledby="snapshot-title">
+          <p className="case-study-section__eyebrow">Visual evolution</p>
+          <div className="case-study-section__content">
+            <h2 id="snapshot-title">
+              Money Snapshot kept the same core relationship while its visual
+              hierarchy became more explicit.
+            </h2>
+            <p>
+              Across all three stages, editable financial inputs drive an
+              immediate summary. The largest change was not the feature set,
+              but how clearly the interface separates input, interpretation,
+              and supporting context.
+            </p>
+
+            <VisualSequence items={moneySnapshotSequence} />
           </div>
         </section>
       </main>
