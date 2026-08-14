@@ -142,6 +142,57 @@ function AbsaNextGenPage() {
             </ol>
           </div>
         </section>
+
+        <section className="case-study-section" aria-labelledby="research-title">
+          <p className="case-study-section__eyebrow">Research foundation</p>
+          <div className="case-study-section__content">
+            <h2 id="research-title">
+              Different inputs informed the design, but they do not carry the
+              same evidentiary weight.
+            </h2>
+
+            <div className="case-study-research-grid">
+              <article>
+                <h3>Desk research</h3>
+                <p>
+                  Sources cited in the assignment work informed the South
+                  African financial examples and the original visual direction.
+                  The financial parameters were current for the 2026 assignment
+                  period and are not maintained as a live feed.
+                </p>
+              </article>
+              <article>
+                <h3>Illustrative personas</h3>
+                <p>
+                  Four personas helped explore different combinations of
+                  income, savings, property, travel, and investing goals. They
+                  were design personas created for the brief, not personas
+                  derived from primary user interviews.
+                </p>
+              </article>
+              <article>
+                <h3>Informal feedback</h3>
+                <p>
+                  A few classmates and friends said the earlier version felt
+                  dense and difficult to follow. That feedback helped motivate
+                  a clearer structure, but it was not a moderated usability
+                  study or a measured behavioural result.
+                </p>
+              </article>
+            </div>
+
+            <aside className="case-study-limitation" aria-labelledby="gap-title">
+              <h3 id="gap-title">What remains unvalidated</h3>
+              <p>
+                The product has not been tested through structured usability
+                sessions with its intended audience. A meaningful next step
+                would be to test whether people understand the simplified
+                language, financial-health framing, and simulator verdicts,
+                then revise the design from observed evidence.
+              </p>
+            </aside>
+          </div>
+        </section>
       </main>
 
       <SiteFooter />
