@@ -1,19 +1,11 @@
 import { Link } from 'react-router-dom'
+import SiteFooter from '../components/layout/SiteFooter.jsx'
+import SiteHeader from '../components/layout/SiteHeader.jsx'
 
 function ProductUXPage() {
   return (
     <div>
-      <header>
-        <Link to="/">Amina Moosa</Link>
-
-        <nav aria-label="Primary navigation">
-          <Link to="/work/product-ux" aria-current="page">
-            Work
-          </Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
-      </header>
+      <SiteHeader workIsCurrent />
 
       <main>
         <header>
@@ -75,10 +67,7 @@ function ProductUXPage() {
         </section>
       </main>
 
-      <footer>
-        <p>Set in Fraunces &amp; IBM Plex Sans. Built in React.</p>
-        <Link to="/">Return home</Link>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }
