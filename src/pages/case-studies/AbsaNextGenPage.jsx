@@ -425,6 +425,67 @@ function AbsaNextGenPage() {
             </figure>
           </div>
         </section>
+
+        <section className="case-study-section" aria-labelledby="reflection-title">
+          <p className="case-study-section__eyebrow">Challenges and reflection</p>
+          <div className="case-study-section__content">
+            <h2 id="reflection-title">
+              The strongest improvements came from treating constraints and
+              failures as design information.
+            </h2>
+
+            <div className="case-study-challenges">
+              <article>
+                <p className="case-study-challenges__label">Information density</p>
+                <h3>Dense language obscured the point of the tools.</h3>
+                <p>
+                  Copy was rewritten in plainer language and contextual
+                  explanations were placed beside the calculations they
+                  support. Whether those explanations are sufficient still
+                  needs structured testing.
+                </p>
+              </article>
+              <article>
+                <p className="case-study-challenges__label">Data flow</p>
+                <h3>The intermediate Strategy Track produced NaN values.</h3>
+                <p>
+                  Required figures were not synchronising correctly from Money
+                  Snapshot. The shared data flow was corrected before the
+                  current release.
+                </p>
+              </article>
+              <article>
+                <p className="case-study-challenges__label">Deployment</p>
+                <h3>Direct routes failed when refreshed on GitHub Pages.</h3>
+                <p>
+                  The application moved to hash-based routing so individual
+                  screens remain reachable within the constraints of static
+                  hosting.
+                </p>
+              </article>
+              <article>
+                <p className="case-study-challenges__label">Model certainty</p>
+                <h3>One rent-versus-buy answer would imply false precision.</h3>
+                <p>
+                  Conservative, base, and optimistic presets let users inspect
+                  how different assumptions change the projection instead of
+                  presenting one result as inevitable.
+                </p>
+              </article>
+            </div>
+
+            <aside className="case-study-reflection" aria-labelledby="next-title">
+              <h3 id="next-title">What I would improve next</h3>
+              <p>
+                The original accessibility scope included chart textures for
+                colour-blind users and an optional dyslexia-friendly typeface.
+                Those features did not reach the shipped build, while ARIA
+                labelling did. Alongside structured usability testing, fuller
+                chart and reading accessibility would be the next priority.
+              </p>
+            </aside>
+          </div>
+        </section>
       </main>
 
       <SiteFooter />
