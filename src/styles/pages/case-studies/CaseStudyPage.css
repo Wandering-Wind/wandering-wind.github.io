@@ -194,6 +194,34 @@
   line-height: 1.55;
 }
 
+.case-study-patterns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 42px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.case-study-patterns li {
+  padding-top: 18px;
+  border-top: 1px solid var(--color-border);
+}
+
+.case-study-patterns h3 {
+  margin: 0 0 10px;
+  color: var(--color-ink);
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.case-study-patterns p {
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
 .case-study-research-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -301,6 +329,11 @@
   }
 
   .case-study-goals {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .case-study-patterns {
     grid-template-columns: 1fr;
     gap: 28px;
   }

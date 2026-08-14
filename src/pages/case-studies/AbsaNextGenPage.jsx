@@ -9,6 +9,7 @@ import onboardingCurrent from '../../assets/case-studies/absa/onboarding-current
 import rentVsBuyCurrent from '../../assets/case-studies/absa/rent-vs-buy-current.png'
 import rentVsBuyPurple from '../../assets/case-studies/absa/rent-vs-buy-purple.png'
 import rentVsBuyWireframe from '../../assets/case-studies/absa/rent-vs-buy-wireframe.svg'
+import strategyTrackCurrent from '../../assets/case-studies/absa/strategy-track-current.png'
 import '../../styles/pages/case-studies/CaseStudyPage.css'
 
 function AbsaNextGenPage() {
@@ -329,6 +330,60 @@ function AbsaNextGenPage() {
             </p>
 
             <VisualSequence items={rentVsBuySequence} />
+          </div>
+        </section>
+
+        <section className="case-study-section" aria-labelledby="patterns-title">
+          <p className="case-study-section__eyebrow">Interaction patterns</p>
+          <div className="case-study-section__content">
+            <h2 id="patterns-title">
+              Guidance stays connected to the input or decision that produced
+              it.
+            </h2>
+            <p>
+              The interface avoids separating calculation from explanation.
+              Inputs, results, warnings, and suggested priorities appear within
+              the same working context so users can adjust a choice and inspect
+              the consequence.
+            </p>
+
+            <ol className="case-study-patterns">
+              <li>
+                <h3>Immediate feedback</h3>
+                <p>
+                  Financial summaries and projections update as assumptions
+                  change, keeping cause and effect visible.
+                </p>
+              </li>
+              <li>
+                <h3>Progressive guidance</h3>
+                <p>
+                  Multi-year strategies are divided into named stages and
+                  milestones rather than presented as one long instruction set.
+                </p>
+              </li>
+              <li>
+                <h3>Contextual priorities</h3>
+                <p>
+                  Warnings and recommendations explain which prerequisite, such
+                  as an emergency fund, should come before a longer-term goal.
+                </p>
+              </li>
+            </ol>
+
+            <figure className="case-study-inline-visual">
+              <img
+                src={strategyTrackCurrent}
+                width="1917"
+                height="928"
+                loading="lazy"
+                alt="Current Strategy Track screen showing a five-stage investment plan, adjustable assumptions, an emergency-fund warning, and a South African context panel."
+              />
+              <figcaption>
+                The Strategy Track keeps adjustable assumptions, staged goals,
+                and prerequisite warnings within one decision context.
+              </figcaption>
+            </figure>
           </div>
         </section>
       </main>
