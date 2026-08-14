@@ -5,6 +5,8 @@ import SiteHeader from '../../components/layout/SiteHeader.jsx'
 import moneySnapshotCurrent from '../../assets/case-studies/absa/money-snapshot-current.png'
 import moneySnapshotPurple from '../../assets/case-studies/absa/money-snapshot-purple.png'
 import moneySnapshotWireframe from '../../assets/case-studies/absa/money-snapshot-wireframe.svg'
+import originalColourGuide from '../../assets/case-studies/absa/original-colour-guide.png'
+import originalVisualMood from '../../assets/case-studies/absa/original-visual-mood.png'
 import loginCurrent from '../../assets/case-studies/absa/login-current.png'
 import loginPurple from '../../assets/case-studies/absa/login-purple.png'
 import loginWireframe from '../../assets/case-studies/absa/login-wireframe.svg'
@@ -14,6 +16,7 @@ import rentVsBuyCalculation from '../../assets/case-studies/absa/rent-vs-buy-cal
 import rentVsBuyPurple from '../../assets/case-studies/absa/rent-vs-buy-purple.png'
 import rentVsBuyWireframe from '../../assets/case-studies/absa/rent-vs-buy-wireframe.svg'
 import strategyTrackCurrent from '../../assets/case-studies/absa/strategy-track-current.png'
+import sitemap from '../../assets/case-studies/absa/sitemap.png'
 import '../../styles/pages/case-studies/CaseStudyPage.css'
 
 function AbsaNextGenPage() {
@@ -539,6 +542,83 @@ function AbsaNextGenPage() {
                 <span aria-hidden="true">+</span>
               </summary>
               <VisualSequence items={loginSequence} />
+            </details>
+
+            <details className="case-study-details">
+              <summary>
+                View the original visual direction and sitemap
+                <span aria-hidden="true">+</span>
+              </summary>
+
+              <div className="process-artifacts">
+                <figure>
+                  <p className="visual-sequence__label">Original visual mood</p>
+                  <a
+                    href={originalVisualMood}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open the original visual mood artifact"
+                  >
+                    <img
+                      src={originalVisualMood}
+                      width="1204"
+                      height="1862"
+                      loading="lazy"
+                      alt="Original visual mood guide referencing neumorphism, glassmorphism, and bento-box composition."
+                    />
+                  </a>
+                  <figcaption>
+                    This artifact documented the visual references behind the
+                    first soft, translucent, card-based direction.
+                  </figcaption>
+                </figure>
+
+                <figure>
+                  <p className="visual-sequence__label">Original colour system</p>
+                  <a
+                    href={originalColourGuide}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open the original colour guide"
+                  >
+                    <img
+                      src={originalColourGuide}
+                      width="1204"
+                      height="1862"
+                      loading="lazy"
+                      alt="Original colour guide showing soft purple, lavender, frosted blue, off-white, dark text, and light-grey colours."
+                    />
+                  </a>
+                  <figcaption>
+                    The palette supported the glowy, low-contrast concept and
+                    makes the later move toward stronger hierarchy easier to
+                    trace.
+                  </figcaption>
+                </figure>
+
+                <figure className="process-artifacts__sitemap">
+                  <p className="visual-sequence__label">Final information architecture</p>
+                  <a
+                    href={sitemap}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open the ABSA NextGen sitemap"
+                  >
+                    <img
+                      src={sitemap}
+                      width="571"
+                      height="393"
+                      loading="lazy"
+                      alt="Sitemap connecting login to Money Snapshot, then branching into Strategy Tracks and Money Studio detail pages."
+                    />
+                  </a>
+                  <figcaption>
+                    The final sitemap replaces the freeform canvas with a
+                    predictable route from profile setup to overview, strategy,
+                    and simulation tools.
+                  </figcaption>
+                </figure>
+              </div>
             </details>
           </div>
         </section>
