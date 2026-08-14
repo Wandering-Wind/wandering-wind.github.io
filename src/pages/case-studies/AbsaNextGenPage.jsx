@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import SiteFooter from '../../components/layout/SiteFooter.jsx'
 import SiteHeader from '../../components/layout/SiteHeader.jsx'
+import onboardingCurrent from '../../assets/case-studies/absa/onboarding-current.png'
 import rentVsBuyCurrent from '../../assets/case-studies/absa/rent-vs-buy-current.png'
 import '../../styles/pages/case-studies/CaseStudyPage.css'
 
@@ -191,6 +192,41 @@ function AbsaNextGenPage() {
                 then revise the design from observed evidence.
               </p>
             </aside>
+          </div>
+        </section>
+
+        <section className="case-study-section" aria-labelledby="structure-title">
+          <p className="case-study-section__eyebrow">Structural pivot</p>
+          <div className="case-study-section__content">
+            <h2 id="structure-title">
+              The product moved from a freeform canvas to a guided sequence.
+            </h2>
+            <p>
+              The original concept asked users to drag financial cards into a
+              flexible, automatically arranged workspace. It was visually
+              expressive, but it placed the burden of organising the experience
+              on someone who had arrived for clarity.
+            </p>
+            <p>
+              The shipped structure uses a staged onboarding flow, persistent
+              navigation, and clearly separated tools. Each step asks for a
+              focused set of information before leading into the dashboard,
+              strategy tracks, and decision simulators.
+            </p>
+
+            <figure className="case-study-inline-visual">
+              <img
+                src={onboardingCurrent}
+                width="1917"
+                height="923"
+                loading="lazy"
+                alt="Current ABSA NextGen onboarding screen with a five-step progress indicator and profile form beside a concise product introduction."
+              />
+              <figcaption>
+                The current onboarding sequence breaks profile setup into five
+                visible steps before users enter the main financial tools.
+              </figcaption>
+            </figure>
           </div>
         </section>
       </main>

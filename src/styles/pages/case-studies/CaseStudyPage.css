@@ -228,6 +228,24 @@
   border: 1px solid var(--color-border);
 }
 
+.case-study-inline-visual {
+  margin: 42px 0 0;
+}
+
+.case-study-inline-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-border);
+}
+
+.case-study-inline-visual figcaption {
+  max-width: 720px;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
 @media (hover: hover) {
   .case-study-hero a:hover {
     color: var(--color-pine);
