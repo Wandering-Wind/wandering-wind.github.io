@@ -83,6 +83,76 @@ function SubscriptionTrackerPage() {
             </aside>
           </div>
         </section>
+
+        <section
+          className="case-study-section"
+          aria-labelledby="subscription-constraints-title"
+        >
+          <p className="case-study-section__eyebrow">
+            Assumptions and constraints
+          </p>
+          <div className="case-study-section__content">
+            <h2 id="subscription-constraints-title">
+              The concept is intentionally bounded by manual input, transparent
+              calculations, and a neutral decision flow.
+            </h2>
+            <p>
+              These constraints define what the proposed experience can and
+              cannot claim. They also keep the design focused enough to explore
+              one interaction properly.
+            </p>
+
+            <ol className="case-study-goals">
+              <li>
+                <h3>Manual subscription data</h3>
+                <p>
+                  Users would enter a service name, cost, billing cycle,
+                  category, and renewal date. The concept does not connect to a
+                  bank account or request transaction history.
+                </p>
+              </li>
+              <li>
+                <h3>Transparent projections</h3>
+                <p>
+                  Monthly, annual, and multi-year totals would be calculated
+                  from entered prices and billing cycles. They would not predict
+                  price increases or future spending behaviour.
+                </p>
+              </li>
+              <li>
+                <h3>Illustrative audience</h3>
+                <p>
+                  The intended young-professional scenario is a design device,
+                  not a persona derived from interviews or behavioural data.
+                </p>
+              </li>
+              <li>
+                <h3>Neutral decision support</h3>
+                <p>
+                  The interface would help someone compare keeping,
+                  downgrading, pausing, or cancelling without treating one
+                  choice as morally correct.
+                </p>
+              </li>
+              <li>
+                <h3>No provider integration</h3>
+                <p>
+                  Proposed cancellation and downgrade actions describe a user
+                  flow. They would not directly modify an external subscription
+                  account.
+                </p>
+              </li>
+              <li>
+                <h3>Deliberately narrow scope</h3>
+                <p>
+                  The concept covers subscription visibility and review, not a
+                  complete banking, expense-tracking, or financial-advice
+                  product.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </section>
       </main>
 
       <SiteFooter />
