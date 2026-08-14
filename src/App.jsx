@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import ComingSoonPage from './pages/ComingSoonPage.jsx'
 import LandingPage from './pages/LandingPage.jsx'
 import ProductUXPage from './pages/ProductUXPage.jsx'
+import AbsaNextGenPage from './pages/case-studies/AbsaNextGenPage.jsx'
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
         element={<ComingSoonPage title="Contact" />}
       />
       <Route path="/work/product-ux" element={<ProductUXPage />} />
+      <Route
+        path="/work/product-ux/absa-nextgen"
+        element={<AbsaNextGenPage />}
+      />
       <Route
         path="/work/game-design"
         element={<ComingSoonPage title="Game Design & Development" />}
