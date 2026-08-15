@@ -89,6 +89,17 @@
   text-decoration: none;
 }
 
+.landing-track__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: auto;
+}
+
+.landing-track__actions .landing-track__link {
+  margin-top: 0;
+}
+
 .landing-track__link span {
   transition: transform 180ms ease;
 }

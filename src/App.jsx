@@ -32,7 +32,15 @@ function App() {
       />
       <Route
         path="/work/game-design"
-        element={<ComingSoonPage title="Game Design & Development" />}
+        element={
+          <ComingSoonPage
+            title="Game Design & Development"
+            externalLink={{
+              href: 'https://wandering-wind.itch.io/',
+              label: 'View games on itch.io',
+            }}
+          />
+        }
       />
       <Route path="*" element={<ComingSoonPage title="Page not found" />} />
     </Routes>

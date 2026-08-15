@@ -50,10 +50,21 @@ function LandingPage() {
             <p className="landing-track__projects">
               GameGrid, Dreamer&apos;s Crossroads, and Heaven&apos;s Ascent.
             </p>
-            <Link className="landing-track__link" to="/work/game-design">
-              View work
-              <span aria-hidden="true">&rarr;</span>
-            </Link>
+            <div className="landing-track__actions">
+              <Link className="landing-track__link" to="/work/game-design">
+                View work
+                <span aria-hidden="true">&rarr;</span>
+              </Link>
+              <a
+                className="landing-track__link"
+                href="https://wandering-wind.itch.io/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                itch.io
+                <span aria-hidden="true">&nearr;</span>
+              </a>
+            </div>
           </article>
         </section>
       </main>

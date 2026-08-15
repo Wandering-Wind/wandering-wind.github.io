@@ -33,22 +33,27 @@
   line-height: 1.55;
 }
 
-.coming-soon a {
+.coming-soon__actions {
+  display: flex;
+  gap: 24px;
   margin-top: 32px;
+}
+
+.coming-soon__actions a {
   padding-bottom: 3px;
   border-bottom: 1px solid currentColor;
   color: var(--color-ink);
   text-decoration: none;
 }
 
-.coming-soon a:focus-visible {
+.coming-soon__actions a:focus-visible {
   border-radius: 2px;
   outline: 2px solid var(--color-pine);
   outline-offset: 5px;
 }
 
 @media (hover: hover) {
-  .coming-soon a:hover {
+  .coming-soon__actions a:hover {
     color: var(--color-pine);
   }
 }

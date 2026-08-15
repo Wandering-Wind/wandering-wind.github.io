@@ -20,6 +20,14 @@ function SiteFooter() {
         >
           LinkedIn
         </a>
+        <span aria-hidden="true">&middot;</span>
+        <a
+          href="https://wandering-wind.itch.io/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          itch.io
+        </a>
       </nav>
     </footer>
   )
