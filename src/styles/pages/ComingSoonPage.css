@@ -1,11 +1,17 @@
-.coming-soon {
+.coming-soon-page {
   display: flex;
   min-height: 100svh;
+  flex-direction: column;
+  background: var(--color-paper);
+}
+
+.coming-soon {
+  display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 32px;
-  background: var(--color-paper);
   text-align: center;
 }
 

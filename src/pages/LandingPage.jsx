@@ -62,7 +62,7 @@ function LandingPage() {
                 rel="noreferrer"
               >
                 itch.io
-                <span aria-hidden="true">&nearr;</span>
+                <span aria-hidden="true">↗</span>
               </a>
             </div>
           </article>
