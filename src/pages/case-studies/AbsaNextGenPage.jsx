@@ -121,12 +121,14 @@ function AbsaNextGenPage() {
             <span aria-hidden="true">←</span> Product &amp; UX Design
           </Link>
 
-          <p className="case-study-hero__status">Shipped coursework product</p>
+          <p className="case-study-hero__status">
+            Completed coursework prototype
+          </p>
           <h1>ABSA NextGen Wealth Studio</h1>
           <p className="case-study-hero__summary">
-            A financial planning tool that turns tax, savings, and property
-            decisions into plain-English guidance, built for young South
-            African professionals, not finance graduates.
+            An interactive financial planning studio that educates, simulates,
+            and guides users through South African-specific decisions, turning
+            chaos into confident choices for young South African professionals.
           </p>
 
           <dl className="case-study-meta">
@@ -176,8 +178,8 @@ function AbsaNextGenPage() {
             alt="Current ABSA NextGen Rent vs Buy Studio showing adjustable financial inputs, a seven-year buying verdict, and a net-worth comparison chart."
           />
           <figcaption>
-            The shipped Rent vs Buy Studio turns adjustable assumptions into a
-            direct comparison and plain-language verdict.
+            The completed Rent vs Buy Studio prototype turns adjustable
+            assumptions into a direct comparison and plain-language verdict.
           </figcaption>
         </figure>
 
@@ -189,19 +191,19 @@ function AbsaNextGenPage() {
               decision.
             </h2>
             <p>
-              NextGen Wealth Studio is a financial-planning web application
-              built around Money Snapshot, a live financial-health dashboard,
-              Strategy Tracks, personalised five-year roadmaps, and Money
-              Studio, a set of interactive decision simulators. The financial
-              examples use South African parameters sourced for the 2026
-              assignment period rather than a live financial-data feed.
+              NextGen Wealth Studio is an interactive financial-planning web
+              application built around Money Snapshot, a live financial-health
+              dashboard, Strategy Tracks, personalised five-year roadmaps, and
+              Money Studio, a set of interactive decision simulators. These
+              financial examples use South African parameters sourced for the
+              2026 period rather than a live financial-data feed.
             </p>
             <p>
               The product moved through three distinct visual and structural
-              stages, from an ambitious glassmorphism and neumorphism canvas,
-              through a purple intermediate build, to the clearer,
-              ABSA-aligned structure that shipped. That evolution, including
-              what changed and why, is the central story of this case study.
+              stages, from a glassmorphism and neumorphism canvas, through a
+              purple intermediate build, to the clearer, ABSA-aligned
+              prototype. That evolution, including what changed and why, is the
+              central story of this case study.
             </p>
           </div>
         </section>
@@ -210,16 +212,15 @@ function AbsaNextGenPage() {
           <p className="case-study-section__eyebrow">Problem and goals</p>
           <div className="case-study-section__content">
             <h2 id="problem-title">
-              Make complex financial choices easier to examine before someone
+              Make complex financial choices easier to examine before the user
               commits to them.
             </h2>
             <p>
-              The assignment brief focused on young South African professionals
+              The case study focuses on young South African professionals
               balancing decisions about property, investing, tax, debt, and
               savings without a simple way to compare their consequences. It
-              framed limited personalisation and financial overwhelm as a
-              business problem for ABSA. That business framing came from the
-              brief and is not presented here as independently verified ABSA
+              treats limited personalisation and financial overwhelm as a
+              coursework design premise, not as independently verified ABSA
               data.
             </p>
 
@@ -227,19 +228,19 @@ function AbsaNextGenPage() {
               <li>
                 <h3>Reduce decision fatigue</h3>
                 <p>
-                  Let people adjust assumptions and compare difficult choices
+                  Let users adjust assumptions and compare difficult choices
                   without building their own spreadsheet.
                 </p>
               </li>
               <li>
-                <h3>Teach through the interaction</h3>
+                <h3>Teaching through the interaction</h3>
                 <p>
-                  Explain South African financial concepts at the moment they
+                  Explain South African financial concepts and how they can
                   affect a calculation or recommendation.
                 </p>
               </li>
               <li>
-                <h3>Connect insight to a next step</h3>
+                <h3>Connecting insight to a next step</h3>
                 <p>
                   Turn a one-time result into a clearer path through
                   personalised milestones and guidance.
@@ -261,10 +262,10 @@ function AbsaNextGenPage() {
               <article>
                 <h3>Desk research</h3>
                 <p>
-                  Sources cited in the assignment work informed the South
+                  Sources cited during the case-study process informed the South
                   African financial examples and the original visual direction.
-                  The financial parameters were current for the 2026 assignment
-                  period and are not maintained as a live feed.
+                  The financial parameters are current for the 2026 period and
+                  are not maintained as a live feed.
                 </p>
               </article>
               <article>
@@ -272,17 +273,17 @@ function AbsaNextGenPage() {
                 <p>
                   Four personas helped explore different combinations of
                   income, savings, property, travel, and investing goals. They
-                  were design personas created for the brief, not personas
+                  were design personas created for this case study, not personas
                   derived from primary user interviews.
                 </p>
               </article>
               <article>
                 <h3>Informal feedback</h3>
                 <p>
-                  A few classmates and friends said the earlier version felt
-                  dense and difficult to follow. That feedback helped motivate
-                  a clearer structure, but it was not a moderated usability
-                  study or a measured behavioural result.
+                  A few classmates, friends, and tutors said the earlier version
+                  felt dense and difficult to follow. That feedback helped
+                  motivate a clearer structure, but it was not a moderated
+                  usability study or a measured behavioural result.
                 </p>
               </article>
             </div>
@@ -309,11 +310,11 @@ function AbsaNextGenPage() {
             <p>
               The original concept asked users to drag financial cards into a
               flexible, automatically arranged workspace. It was visually
-              expressive, but it placed the burden of organising the experience
-              on someone who had arrived for clarity.
+               expressive, but it placed the burden of organising the experience
+               on a user who had arrived for clarity.
             </p>
             <p>
-              The shipped structure uses a staged onboarding flow, persistent
+              The completed prototype uses a staged onboarding flow, persistent
               navigation, and clearly separated tools. Each step asks for a
               focused set of information before leading into the dashboard,
               strategy tracks, and decision simulators.
@@ -456,8 +457,7 @@ function AbsaNextGenPage() {
                 />
               </div>
               <figcaption>
-                The cropped excerpt shows the central comparison loop. The
-                original screenshot remains intact in the project assets.
+                This excerpt shows the central comparison loop.
               </figcaption>
             </figure>
           </div>
@@ -476,9 +476,9 @@ function AbsaNextGenPage() {
                 <p className="case-study-challenges__label">Information density</p>
                 <h3>Dense language obscured the point of the tools.</h3>
                 <p>
-                  Copy was rewritten in plainer language and contextual
-                  explanations were placed beside the calculations they
-                  support. Whether those explanations are sufficient still
+                  The current prototype is written in plainer language, and
+                  contextual explanations are placed beside the calculations
+                  they support. Whether those explanations are sufficient still
                   needs structured testing.
                 </p>
               </article>
@@ -516,7 +516,7 @@ function AbsaNextGenPage() {
               <p>
                 The original accessibility scope included chart textures for
                 colour-blind users and an optional dyslexia-friendly typeface.
-                Those features did not reach the shipped build, while ARIA
+                Those features did not reach the completed prototype, while ARIA
                 labelling did. Alongside structured usability testing, fuller
                 chart and reading accessibility would be the next priority.
               </p>
@@ -531,9 +531,8 @@ function AbsaNextGenPage() {
               Supporting screens show the same shift in structure and tone.
             </h2>
             <p>
-              The login sequence is secondary to the main product story, so it
-              remains available without interrupting the primary case-study
-              path.
+              Below is additional information on how this case study has
+              evolved.
             </p>
 
             <details className="case-study-details">

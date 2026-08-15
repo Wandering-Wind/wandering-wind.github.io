@@ -1,10 +1,10 @@
 const productUXProjects = [
   {
     slug: 'absa-nextgen',
-    status: 'Shipped coursework product',
+    status: 'Completed coursework prototype',
     title: 'ABSA NextGen Wealth Studio',
     summary:
-      'A financial planning tool that helps young South African professionals understand tax, investing, and property decisions.',
+      'An interactive financial planning studio that guides young South African professionals through tax, savings, and property decisions.',
   },
   {
     slug: 'subscription-tracker',
