@@ -451,24 +451,80 @@
 }
 
 .subscription-palette span {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
   padding: 10px 12px;
   font-size: 0.75rem;
 }
 
-.subscription-palette__amber {
-  color: #2e241b;
-  background: #d98e3f;
+.subscription-palette strong {
+  font-weight: 500;
 }
 
-.subscription-palette__cream {
-  color: #2e2e2e;
-  background: #f6eddf;
+.subscription-palette__black-pearl {
+  color: #edeae3;
+  background: #1a2c30;
 }
 
-.subscription-palette__charcoal {
-  color: #fff;
-  background: #2e2e2e;
+.subscription-palette__surface {
+  color: #edeae3;
+  background: #22363b;
+}
+
+.subscription-palette__orange {
+  color: #1a2c30;
+  background: #fe7e3c;
+}
+
+.subscription-palette__copper {
+  color: #edeae3;
+  background: #61413c;
+}
+
+.subscription-palette__reclaimed {
+  color: #1a2c30;
+  background: #6fcf97;
+}
+
+.subscription-palette__text {
+  color: #1a2c30;
+  background: #edeae3;
+}
+
+.concept-screens {
+  display: grid;
+  gap: 46px;
+  margin-top: 46px;
+}
+
+.concept-screens figure {
+  margin: 0;
+}
+
+.concept-screens a {
+  display: block;
+}
+
+.concept-screens img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--color-border);
+  background: #1a2c30;
+}
+
+.concept-screens figcaption {
+  max-width: 680px;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.concept-screens a:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid var(--color-pine);
+  outline-offset: 5px;
 }
 
 .validation-questions {

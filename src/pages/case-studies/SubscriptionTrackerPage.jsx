@@ -1,4 +1,8 @@
 import { Link } from 'react-router-dom'
+import addSubscriptionMockup from '../../assets/case-studies/subscription-tracker/add-subscription.png'
+import dashboardMockup from '../../assets/case-studies/subscription-tracker/dashboard.png'
+import forecastMockup from '../../assets/case-studies/subscription-tracker/forecast.png'
+import subscriptionReviewMockup from '../../assets/case-studies/subscription-tracker/subscription-review.png'
 import SiteFooter from '../../components/layout/SiteFooter.jsx'
 import SiteHeader from '../../components/layout/SiteHeader.jsx'
 import '../../styles/pages/case-studies/CaseStudyPage.css'
@@ -268,39 +272,165 @@ function SubscriptionTrackerPage() {
 
         <section
           className="case-study-section"
-          aria-labelledby="subscription-direction-title"
+          aria-labelledby="subscription-mockups-title"
         >
-          <p className="case-study-section__eyebrow">Proposed visual direction</p>
+          <p className="case-study-section__eyebrow">First interface mockups</p>
           <div className="case-study-section__content">
-            <h2 id="subscription-direction-title">
-              A warm, personal system would separate the concept from a bank or
-              institutional finance product.
+            <h2 id="subscription-mockups-title">
+              The first design pass connects visibility, review, entry, and
+              forecasting in one visual system.
             </h2>
             <p>
-              This direction is provisional and may change once wireframes show
-              what the interface needs. It is presented as an intention, not a
-              finished style guide.
+              These mockups translate the proposed structure into four desktop
+              states. They represent design decisions to review and test, not a
+              validated or implemented product.
+            </p>
+
+            <div className="concept-screens">
+              <figure>
+                <p className="visual-sequence__label">01, Dashboard</p>
+                <a
+                  href={dashboardMockup}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open the Subscription Tracker dashboard mockup"
+                >
+                  <img
+                    src={dashboardMockup}
+                    width="1280"
+                    height="832"
+                    loading="lazy"
+                    alt="Subscription Tracker dashboard showing combined monthly and annual spending, a forecast preview, upcoming renewals, and a service worth reviewing."
+                  />
+                </a>
+                <figcaption>
+                  The dashboard leads with the combined commitment, then pairs
+                  it with renewals, a forecast preview, and one service that may
+                  deserve review.
+                </figcaption>
+              </figure>
+
+              <figure>
+                <p className="visual-sequence__label">02, Review state</p>
+                <a
+                  href={subscriptionReviewMockup}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open the subscription review mockup"
+                >
+                  <img
+                    src={subscriptionReviewMockup}
+                    width="1280"
+                    height="832"
+                    loading="lazy"
+                    alt="Subscription list with Adobe Creative Cloud expanded to show usage options, downgrade guidance, keep, and cancel actions."
+                  />
+                </a>
+                <figcaption>
+                  Expanding one service keeps its price, renewal timing, usage
+                  check-in, and possible actions within the list context.
+                </figcaption>
+              </figure>
+
+              <figure>
+                <p className="visual-sequence__label">03, Add subscription</p>
+                <a
+                  href={addSubscriptionMockup}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open the add-subscription mockup"
+                >
+                  <img
+                    src={addSubscriptionMockup}
+                    width="1280"
+                    height="832"
+                    loading="lazy"
+                    alt="Subscription list beside an add-subscription panel showing service details and the resulting annual cost before saving."
+                  />
+                </a>
+                <figcaption>
+                  The entry panel shows the annualised cost before saving, so
+                  impact appears at the moment a new commitment is added.
+                </figcaption>
+              </figure>
+
+              <figure>
+                <p className="visual-sequence__label">04, Forecast</p>
+                <a
+                  href={forecastMockup}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open the Subscription Tracker forecast mockup"
+                >
+                  <img
+                    src={forecastMockup}
+                    width="1280"
+                    height="832"
+                    loading="lazy"
+                    alt="Forecast screen comparing subscription costs over time with one, three, and five-year totals and removable service chips."
+                  />
+                </a>
+                <figcaption>
+                  The forecast combines cumulative totals with removable service
+                  chips, proposing a direct way to inspect how individual
+                  choices change the trajectory.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="case-study-section"
+          aria-labelledby="subscription-direction-title"
+        >
+          <p className="case-study-section__eyebrow">Current visual direction</p>
+          <div className="case-study-section__content">
+            <h2 id="subscription-direction-title">
+              Black Pearl and Burnt Orange create a focused, high-contrast
+              financial workspace.
+            </h2>
+            <p>
+              The first mockups use one dark visual system throughout. The
+              palette and typography are current design choices and may still
+              change after prototyping or accessibility review.
             </p>
 
             <div className="subscription-direction">
               <article>
                 <h3>Colour</h3>
-                <div className="subscription-palette" aria-label="Proposed colour palette">
-                  <span className="subscription-palette__amber">Warm amber</span>
-                  <span className="subscription-palette__cream">Soft cream</span>
-                  <span className="subscription-palette__charcoal">Deep charcoal</span>
+                <div className="subscription-palette" aria-label="Current colour palette">
+                  <span className="subscription-palette__black-pearl">
+                    Black Pearl <strong>#1A2C30</strong>
+                  </span>
+                  <span className="subscription-palette__surface">
+                    Surface <strong>#22363B</strong>
+                  </span>
+                  <span className="subscription-palette__orange">
+                    Burnt Orange <strong>#FE7E3C</strong>
+                  </span>
+                  <span className="subscription-palette__copper">
+                    Copper <strong>#61413C</strong>
+                  </span>
+                  <span className="subscription-palette__reclaimed">
+                    Reclaimed <strong>#6FCF97</strong>
+                  </span>
+                  <span className="subscription-palette__text">
+                    Text <strong>#EDEAE3</strong>
+                  </span>
                 </div>
                 <p>
-                  Amber would highlight value and decisions, cream would soften
-                  the working surface, and charcoal would preserve readable
-                  contrast. Muted red would be reserved for urgent renewals.
+                  Black Pearl and Surface establish the workspace. Burnt Orange
+                  highlights costs and actions, Copper and Reclaimed support
+                  usage signals, and the warm off-white carries primary text.
                 </p>
               </article>
               <article>
                 <h3>Typography</h3>
                 <p>
-                  Sora is proposed for friendly, geometric headings, with Inter
-                  for body copy and financial values where clarity matters most.
+                  DM Sans is used throughout in light, regular, semibold, and
+                  bold weights. A single family keeps navigation, labels,
+                  monetary values, and supporting copy visually consistent.
                 </p>
               </article>
               <article>
@@ -353,10 +483,11 @@ function SubscriptionTrackerPage() {
               <h3 id="subscription-status-title">Current status</h3>
               <p>
                 The product hypothesis, scope, information architecture, and
-                interaction principles are defined. Wireframes, visual design,
-                prototyping, and usability testing have not been completed.
-                This page will be updated with process evidence only as that work
-                exists.
+                interaction principles are defined. A first set of four desktop
+                interface mockups and a visual direction now exist. Responsive
+                states, a connected prototype, accessibility review, and
+                usability testing have not been completed. This page will be
+                updated with process evidence only as that work exists.
               </p>
             </aside>
           </div>
