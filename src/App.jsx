@@ -27,6 +27,10 @@ function App() {
         element={<SubscriptionTrackerPage />}
       />
       <Route
+        path="/work/product-ux/thawing-memory"
+        element={<ComingSoonPage title="Thawing Memory" />}
+      />
+      <Route
         path="/work/game-design"
         element={<ComingSoonPage title="Game Design & Development" />}
       />

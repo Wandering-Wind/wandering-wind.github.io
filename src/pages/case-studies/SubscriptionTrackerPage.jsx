@@ -23,8 +23,9 @@ function SubscriptionTrackerPage() {
           </p>
           <h1>Subscription Tracker</h1>
           <p className="case-study-hero__summary">
-            Making the hidden, compounding cost of recurring subscriptions
-            visible before it quietly erodes a budget.
+            Making visible the hidden compounding cost of recurring
+            subscriptions and a place to keep track of all the many
+            subscriptions.
           </p>
 
           <dl className="case-study-meta">
@@ -42,10 +43,21 @@ function SubscriptionTrackerPage() {
             </div>
           </dl>
 
+          <nav className="case-study-links" aria-label="Project links">
+            <a
+              href="https://www.figma.com/design/ME3zin7VZpcVHOog4vW6yU/Subscription-Tracker-Wireframes?node-id=3606-494&t=IVCzrCY5oTCrHvfH-1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Figma wireframes <span aria-hidden="true">↗</span>
+            </a>
+          </nav>
+
           <p className="case-study-disclaimer">
-            This is a self-initiated design concept. The problem and audience
-            statements are hypotheses, not findings from primary research. No
-            usability testing or outcome data is presented.
+            This is a self-initiated design-only case study. The problem and
+            audience statements are hypotheses, not findings from primary
+            research. No usability testing or outcome data is presented within
+            this case study.
           </p>
         </header>
 
