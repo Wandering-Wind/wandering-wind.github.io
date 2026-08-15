@@ -68,21 +68,21 @@ function SubscriptionTrackerPage() {
           <p className="case-study-section__eyebrow">Overview and hypothesis</p>
           <div className="case-study-section__content">
             <h2 id="subscription-overview-title">
-              What changes when recurring costs are presented as one commitment
-              instead of separate small charges?
+              What happens when recurring subscription costs are presented as
+              one big expense instead of separate small charges?
             </h2>
             <p>
-              Subscription Tracker is a design concept for consolidating
-              recurring payments across streaming, software, memberships, and
-              other services. It would show the combined monthly and annual
-              cost, upcoming renewals, and a longer-term projection within one
-              focused experience.
+              Subscription Tracker is a design concept that brings all of a
+              person&apos;s recurring payments, such as streaming services,
+              software, memberships, and other subscriptions, into one place.
+              It shows the combined monthly and annual cost, upcoming renewals,
+              and a longer-term projection within one focused experience.
             </p>
             <p>
-              The concept deliberately addresses one flow rather than proposing
-              a complete banking or budgeting application. Its purpose is to
-              explore how cost can be made visible at the moment someone reviews,
-              adds, or reconsiders a subscription.
+              The concept focuses on one specific user experience rather than
+              trying to create a complete banking or budgeting app. Its purpose
+              is to explore how cost can be made visible at the moment someone
+              reviews, adds, or reconsiders a subscription.
             </p>
 
             <aside
@@ -109,13 +109,13 @@ function SubscriptionTrackerPage() {
           </p>
           <div className="case-study-section__content">
             <h2 id="subscription-constraints-title">
-              The concept is intentionally bounded by manual input, transparent
-              calculations, and a neutral decision flow.
+              The concept is intentionally bound by manual input, clear
+              calculations, and unbiased, neutral decision-making.
             </h2>
             <p>
-              These constraints define what the proposed experience can and
-              cannot claim. They also keep the design focused enough to explore
-              one interaction properly.
+              These constraints define what the design can and cannot do. They
+              also help keep the project focused on exploring one specific
+              interaction well, instead of trying to do too much.
             </p>
 
             <ol className="case-study-goals">
@@ -123,8 +123,8 @@ function SubscriptionTrackerPage() {
                 <h3>Manual subscription data</h3>
                 <p>
                   Users would enter a service name, cost, billing cycle,
-                  category, and renewal date. The concept does not connect to a
-                  bank account or request transaction history.
+                  category, and renewal date. The current concept does not
+                  connect to a bank account or request transaction history.
                 </p>
               </li>
               <li>
@@ -143,26 +143,26 @@ function SubscriptionTrackerPage() {
                 </p>
               </li>
               <li>
-                <h3>Neutral decision support</h3>
+                <h3>Neutral decision-making</h3>
                 <p>
-                  The interface would help someone compare keeping,
-                  downgrading, pausing, or cancelling without treating one
+                  The interface would help users compare keeping, downgrading,
+                  pausing, or cancelling subscriptions without treating one
                   choice as morally correct.
                 </p>
               </li>
               <li>
-                <h3>No provider integration</h3>
+                <h3>No direct subscription changes</h3>
                 <p>
                   Proposed cancellation and downgrade actions describe a user
-                  flow. They would not directly modify an external subscription
-                  account.
+                  flow. The current concept will not directly modify an external
+                  subscription account.
                 </p>
               </li>
               <li>
-                <h3>Deliberately narrow scope</h3>
+                <h3>Intentionally simple and focused scope</h3>
                 <p>
-                  The concept covers subscription visibility and review, not a
-                  complete banking, expense-tracking, or financial-advice
+                  The current concept covers subscription visibility and review,
+                  not a complete banking, expense-tracking, or financial-advice
                   product.
                 </p>
               </li>
@@ -177,7 +177,8 @@ function SubscriptionTrackerPage() {
           <p className="case-study-section__eyebrow">Scope and structure</p>
           <div className="case-study-section__content">
             <h2 id="subscription-scope-title">
-              Four connected views move from awareness to a deliberate decision.
+              Three connected views guide the user from understanding their
+              subscriptions to making a decision.
             </h2>
             <p>
               The proposed information architecture keeps the experience small.
@@ -191,7 +192,8 @@ function SubscriptionTrackerPage() {
                 <h3>Dashboard</h3>
                 <p>
                   What is the combined monthly and annual commitment, and which
-                  renewals are approaching?
+                  renewals are approaching, while also showing a preview of the
+                  forecast?
                 </p>
               </article>
               <article>
@@ -199,7 +201,9 @@ function SubscriptionTrackerPage() {
                 <h3>Subscription list</h3>
                 <p>
                   Which services are active, what do they cost, and how can they
-                  be sorted by cost, category, or renewal date?
+                  be sorted by cost, category, or renewal date? Is the service
+                  still used, and should it be kept, paused, downgraded, or
+                  cancelled outside the tool?
                 </p>
               </article>
               <article>
@@ -208,14 +212,6 @@ function SubscriptionTrackerPage() {
                 <p>
                   What would the current set of subscriptions cost over one,
                   three, or five years?
-                </p>
-              </article>
-              <article>
-                <p className="concept-grid__number">04</p>
-                <h3>Subscription detail</h3>
-                <p>
-                  Is the service still used, and should it be kept, paused,
-                  downgraded, or cancelled outside the tool?
                 </p>
               </article>
             </div>
@@ -239,15 +235,16 @@ function SubscriptionTrackerPage() {
           <div className="case-study-section__content">
             <h2 id="subscription-interactions-title">
               Each interaction translates a recurring charge into a decision
-              someone can inspect.
+              that the user can inspect.
             </h2>
 
             <ol className="case-study-patterns">
               <li>
-                <h3>Spend reality check</h3>
+                <h3>Spending reality check</h3>
                 <p>
                   The dashboard would pair the combined total with a concrete
-                  time period instead of presenting a monthly number alone.
+                  time period of one year instead of presenting a monthly number
+                  alone.
                 </p>
               </li>
               <li>
@@ -260,8 +257,8 @@ function SubscriptionTrackerPage() {
               <li>
                 <h3>Neutral usage check-in</h3>
                 <p>
-                  A lightweight prompt would help someone consider recent use
-                  without labelling a subscription as good or bad.
+                  A light prompt would help someone consider recent use of a
+                  service without labelling that subscription as good or bad.
                 </p>
               </li>
               <li>
@@ -275,7 +272,7 @@ function SubscriptionTrackerPage() {
                 <h3>Multiple off-ramps</h3>
                 <p>
                   Keep, pause, downgrade, and cancel would remain visible as
-                  alternatives rather than forcing a binary decision.
+                  alternatives rather than forcing a decision.
                 </p>
               </li>
             </ol>
@@ -286,17 +283,31 @@ function SubscriptionTrackerPage() {
           className="case-study-section"
           aria-labelledby="subscription-mockups-title"
         >
-          <p className="case-study-section__eyebrow">First interface mockups</p>
+          <p className="case-study-section__eyebrow">First interface concept</p>
           <div className="case-study-section__content">
             <h2 id="subscription-mockups-title">
-              The first design pass connects visibility, review, entry, and
+              The first design concept connects visibility, review, entry, and
               forecasting in one visual system.
             </h2>
             <p>
-              These mockups translate the proposed structure into four desktop
-              states. They represent design decisions to review and test, not a
+              These mockups translate the proposed structure into three desktop
+              views. They represent design decisions to review and test, not a
               validated or implemented product.
             </p>
+
+            <nav
+              className="case-study-links"
+              aria-label="Interface concept links"
+            >
+              <a
+                href="https://www.figma.com/design/ME3zin7VZpcVHOog4vW6yU/Subscription-Tracker-Wireframes?node-id=3606-494&t=IVCzrCY5oTCrHvfH-1"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Explore the interface in Figma{' '}
+                <span aria-hidden="true">â†—</span>
+              </a>
+            </nav>
 
             <div className="concept-screens">
               <figure>
@@ -464,8 +475,8 @@ function SubscriptionTrackerPage() {
           <p className="case-study-section__eyebrow">What I would validate next</p>
           <div className="case-study-section__content">
             <h2 id="subscription-validation-title">
-              The next questions concern comprehension and decision quality, not
-              whether a polished screen looks appealing.
+              The next questions concern comprehension, decision quality, and
+              expansion.
             </h2>
 
             <ul className="validation-questions">
@@ -489,17 +500,21 @@ function SubscriptionTrackerPage() {
                 What information is necessary for a useful review without
                 asking for sensitive financial or transaction data?
               </li>
+              <li>
+                How could the user experience improve if this concept connected
+                to banking apps and could cancel subscriptions directly?
+              </li>
             </ul>
 
             <aside className="case-study-reflection" aria-labelledby="subscription-status-title">
               <h3 id="subscription-status-title">Current status</h3>
               <p>
                 The product hypothesis, scope, information architecture, and
-                interaction principles are defined. A first set of four desktop
-                interface mockups and a visual direction now exist. Responsive
+                interaction principles are defined. A first set of three desktop
+                interface views and a visual direction now exist. Responsive
                 states, a connected prototype, accessibility review, and
                 usability testing have not been completed. This page will be
-                updated with process evidence only as that work exists.
+                updated with process evidence as the project develops.
               </p>
             </aside>
           </div>
