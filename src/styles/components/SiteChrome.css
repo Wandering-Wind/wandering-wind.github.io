@@ -8,10 +8,32 @@
 }
 
 .site-header__wordmark {
+  position: relative;
+  display: inline-block;
   color: var(--color-ink);
   font-family: var(--font-serif);
   font-size: 1.65rem;
   text-decoration: none;
+}
+
+.site-header__wordmark-measure {
+  visibility: hidden;
+}
+
+.site-header__wordmark-text {
+  position: absolute;
+  inset: 0;
+  white-space: nowrap;
+}
+
+.site-header__wordmark-cursor {
+  display: inline-block;
+  width: 1px;
+  height: 0.9em;
+  margin-left: 3px;
+  animation: wordmark-cursor 700ms steps(1, end) infinite;
+  background: currentColor;
+  vertical-align: -0.04em;
 }
 
 .site-header nav {
@@ -106,5 +128,11 @@
   .site-header nav a,
   .site-footer a {
     transition-duration: 0.01ms;
+  }
+}
+
+@keyframes wordmark-cursor {
+  50% {
+    opacity: 0;
   }
 }

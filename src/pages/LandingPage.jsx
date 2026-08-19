@@ -14,7 +14,13 @@ function LandingPage() {
           aria-labelledby="introduction-heading"
         >
           <h1 id="introduction-heading">
-            I design interactions by guiding action, not instructing it.
+            <span className="landing-hero__phrase">I design interactions</span>
+            <span className="landing-hero__phrase landing-hero__phrase--second">
+              by guiding action,
+            </span>
+            <span className="landing-hero__phrase landing-hero__phrase--third">
+              not instructing it.
+            </span>
           </h1>
           <p>
             UI/UX design and front-end development, alongside game design and
@@ -33,14 +39,32 @@ function LandingPage() {
 
           <article className="landing-track landing-track--featured">
             <p className="landing-track__eyebrow">Featured track</p>
-            <h3>Product &amp; UX Design</h3>
+            <h3 aria-label="Product and UX Design">
+              Product{' '}
+              <span className="landing-track__ampersand" aria-hidden="true">
+                &amp;
+              </span>{' '}
+              UX Design
+            </h3>
             <p className="landing-track__projects">
               ABSA NextGen Wealth Studio, Subscription Tracker, and Thawing
               Memory.
             </p>
-            <Link className="landing-track__link" to="/work/product-ux">
-              View case studies
-              <span aria-hidden="true">&rarr;</span>
+            <Link className="landing-track__cta" to="/work/product-ux">
+              <span className="landing-track__cta-copy">
+                <span className="landing-track__cta-primary">
+                  Explore case studies
+                </span>
+                <span
+                  className="landing-track__cta-secondary"
+                  aria-hidden="true"
+                >
+                  View 3 selected projects
+                </span>
+              </span>
+              <span className="landing-track__cta-arrow" aria-hidden="true">
+                &rarr;
+              </span>
             </Link>
           </article>
 
