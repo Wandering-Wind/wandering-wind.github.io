@@ -3,6 +3,7 @@ import addSubscriptionMockup from '../../assets/case-studies/subscription-tracke
 import dashboardMockup from '../../assets/case-studies/subscription-tracker/dashboard.png'
 import forecastMockup from '../../assets/case-studies/subscription-tracker/forecast.png'
 import subscriptionReviewMockup from '../../assets/case-studies/subscription-tracker/subscription-review.png'
+import BackToTopButton from '../../components/case-studies/BackToTopButton.jsx'
 import SiteFooter from '../../components/layout/SiteFooter.jsx'
 import SiteHeader from '../../components/layout/SiteHeader.jsx'
 import '../../styles/pages/case-studies/CaseStudyPage.css'
@@ -521,6 +522,7 @@ function SubscriptionTrackerPage() {
         </section>
       </main>
 
+      <BackToTopButton />
       <SiteFooter />
     </div>
   )

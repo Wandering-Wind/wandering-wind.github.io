@@ -18,6 +18,52 @@
   background: var(--color-paper);
 }
 
+.back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 10;
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border: 1px solid var(--color-ink);
+  border-radius: 2px;
+  color: var(--color-paper);
+  background: var(--color-ink);
+  box-shadow: 0 8px 24px rgb(26 26 26 / 12%);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    color 180ms ease,
+    background-color 180ms ease;
+}
+
+.back-to-top--visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.back-to-top:focus-visible {
+  outline: 2px solid var(--color-pine);
+  outline-offset: 4px;
+}
+
+@media (hover: hover) {
+  .back-to-top:hover {
+    color: var(--color-ink);
+    background: var(--color-paper);
+  }
+}
+
 .case-study-hero {
   max-width: 1040px;
   margin: 0 auto;
@@ -723,6 +769,17 @@
 }
 
 @media (max-width: 900px) {
+  .back-to-top {
+    min-width: 44px;
+    justify-content: center;
+    gap: 0;
+    padding-inline: 12px;
+  }
+
+  .back-to-top > span:first-child {
+    display: none;
+  }
+
   .case-study-main {
     width: calc(100% - 32px);
   }
@@ -769,6 +826,11 @@
 }
 
 @media (max-width: 700px) {
+  .back-to-top {
+    right: 16px;
+    bottom: 16px;
+  }
+
   .case-study-main {
     width: 100%;
     border-right: 0;
@@ -842,6 +904,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .back-to-top,
   .case-study-details summary span,
   .case-study-closing__next > span:last-child {
     transition-duration: 0.01ms;

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import BackToTopButton from '../../components/case-studies/BackToTopButton.jsx'
 import VisualSequence from '../../components/case-studies/VisualSequence.jsx'
 import SiteFooter from '../../components/layout/SiteFooter.jsx'
 import SiteHeader from '../../components/layout/SiteHeader.jsx'
@@ -653,6 +654,7 @@ function AbsaNextGenPage() {
         </nav>
       </main>
 
+      <BackToTopButton />
       <SiteFooter />
     </div>
   )
